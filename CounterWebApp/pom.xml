@@ -179,7 +179,6 @@
 						<exclude>**/at/**</exclude>
 						<exclude>**/it/**</exclude>
 					</excludes>
-					<argLine>-agentpath:"C:\Program Files\dynaTrace\Dynatrace 6.3\agent\lib64\dtagent.dll"=name=JavaAgent,server=localhost:9998,optionTestRunIdJava=${dtTestrunID}</argLine>
 				</configuration>
 			</plugin>
 			<plugin>
