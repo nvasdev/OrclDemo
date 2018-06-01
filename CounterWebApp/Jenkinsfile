@@ -34,7 +34,7 @@ pipeline {
 
                                                                                 url: 'https://github.com/nvasdev/DevOps.git',
 
-                                                                                credentialsId: 'ed7740ef-8f5b-42b7-ae8b-e5c14399dcf7'
+                                                                                credentialsId: '9b64ea1f-080a-4bea-adb4-6ac777022e3a'
 
                                                                 )
 
