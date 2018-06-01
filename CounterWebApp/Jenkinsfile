@@ -16,9 +16,9 @@ pipeline {
 
     tools {
 
-        maven 'Maven'
+        maven 'maven'
 
-        jdk 'Jdk1.8'
+        jdk 'jdk1.8'
 
     }
 
