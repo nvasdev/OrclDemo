@@ -22,8 +22,9 @@ pipeline {
 	       bat "echo ${params.EmailRecipient}"
 	       bat "echo ${params.region}"
 		
-               bat 'mvn  clean package sonar:sonar -Dsonar.host.url=http://dhcp-10-180-42-232.in.oracle.com:9000/ -DproxySet=true -DproxyHost=www-proxy.us.oracle.com -DproxyPort=80 -f CounterWebApp/pom.xml'
-		  //sh 'mvn clean package -DproxySet=true -DproxyHost=www-proxy.us.oracle.com -DproxyPort=80'
+               #bat 'mvn  clean package sonar:sonar -Dsonar.host.url=http://dhcp-10-180-42-232.in.oracle.com:9000/ -DproxySet=true -DproxyHost=www-proxy.us.oracle.com -DproxyPort=80 -f CounterWebApp/pom.xml'
+		bat 'mvn  clean package sonar:sonar -Dsonar.host.url=http://dhcp-10-180-42-232.in.oracle.com:9000/ -DproxySet=true -DproxyHost=www-proxy.us.oracle.com -DproxyPort=80 -f pom.xml'
+		    //sh 'mvn clean package -DproxySet=true -DproxyHost=www-proxy.us.oracle.com -DproxyPort=80'
 		   	nexusArtifactUploader(
     			nexusVersion: 'nexus3',
     			protocol: 'http',
